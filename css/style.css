@@ -1,0 +1,337 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F7FDFC;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 2560px;
+    padding: 10px 25px 50px 25px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1.6px solid #e3e3e3;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header nav ul li:last-child {
+    border: 2px solid #646E7A;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header nav ul li:last-child:hover {
+    border-color: #a2a2a2;
+    transition: ease-in-out;
+}
+
+main {
+    /* margin: ; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-card {
+    max-width: fit-content;
+    display: grid;
+    /* place-items: center; */
+    grid-template-columns: 500px 300px;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.checkout-card-left {
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-card-left .title {
+    padding: 30px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.checkout-card-left h1 {
+    color: #1D2C3C;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow:  0px 4px #00000040;
+}
+
+.payment-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.number-one {
+    padding: 30px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.number-two {
+    padding: 30px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.details-box {
+    padding: 10px 0;
+}
+
+.name-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-div label {
+    font-size: 14px;
+    color: #1D2C3C;
+    line-height: 16.8px;
+    font-weight: 400;
+}
+
+.input-div input {
+    background: #EDEFF2;
+    color: #646E7A;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-div input::placeholder {
+    color: #646E7A;
+}
+
+.card-section {
+   margin-top: 10px;
+}
+
+
+.credit-card-box {
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 3fr auto auto; */
+    /* width: 360px; */
+    width: 100%;
+    align-items: center;
+    background: #EDEFF2;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+
+.card-label {
+    font-size: 14px;
+    color: #1D2C3C;
+    line-height: 16.8px;
+    font-weight: 400;
+}
+
+.card-number {
+    flex: 1;
+    border: none;
+    background: #EDEFF2;
+    padding: 10px;
+}
+
+.month-year {
+    display: flex;
+    align-items: center;
+    /* max-width: 80px; */
+}
+
+.month-year .month {
+    width: 24px;
+    padding: 6px;
+    border: none;
+    background: transparent;
+}
+
+.slash {
+    color: #646E7A;
+}
+
+.month-year .year {
+    width: 24px;
+    padding: 6px;
+    border: none;
+    background: transparent;
+}
+
+.credit-card-box .cvc {
+    width: 45px;
+    padding: 6px;
+    border: none;
+    background: transparent;
+}
+
+.submit {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit button {
+    background: #038E7D;
+    border: none;
+    padding: 14px 0px;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.submit .support {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.submit .support span {
+    font-weight: 600;
+}
+
+.checkout-card-right {
+    background: #1179BF;
+    color: #fff;
+    padding: 34px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout-card-right h3 {
+    font-weight: 200;
+}
+
+.checkout-card-right .amount {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkout-card-right .amount .price {
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.checkout-card-right .amount .price .dollar-sup {
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: -8px;
+}
+
+.checkout-card-right .amount .year {
+    font-size: 18px;
+    margin-bottom: -18px;
+    margin-left: 10px;
+}
+
+.package ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.package ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.client {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #dddddd40;
+}
+
+.client p {
+    font-weight: 300;
+}
+
+.client a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    word-spacing: 1.3px;
+}
+
+.test {
+    margin-top: 20px;
+}
+
+.testimony {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.testimony p {
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 400;
+    color: #636B6F;
+}
+
+footer span {
+    color: #31708F;
+    cursor: pointer;
+}
